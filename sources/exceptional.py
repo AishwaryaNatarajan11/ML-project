@@ -1,5 +1,8 @@
+import os
+os.chdir("/Users/PC/OneDrive/Documents/MLproject")
 import sys
-import logging
+sys.path.append("/Users/PC/OneDrive/Documents/MLproject")
+from sources.logger import logging
 
 def error_message_detail(error,error_detail:sys):
     _,_, exc_tb=error_detail.exc_info()
